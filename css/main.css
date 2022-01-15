@@ -50,3 +50,23 @@ footer a {
 #footer-nav {
   margin-top: 20px;
 }
+
+.carousel img {
+  height: 90vh;
+}
+
+.centering {
+  display: block;
+  margin-right: ;
+  margin-left: ;
+}
+
+#footid {
+  text-align: center;
+}
+
+.myDiv {
+  border: 8px outset;
+  background-color: LIGHTBLUE;
+  text-align: center;
+}
