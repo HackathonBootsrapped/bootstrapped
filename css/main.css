@@ -1,0 +1,52 @@
+a,
+a:active,
+a:visited,
+a:link,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #578abd;
+}
+
+nav a {
+  color: #fff !important;
+  align-self: center;
+}
+
+.justify-right {
+  justify-content: right;
+  float: right;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+.about-paragraphs {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #578abd;
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer a {
+  margin: 40px;
+}
+.container80 {
+  width: 80%;
+  margin: auto;
+}
+#footer-nav {
+  margin-top: 20px;
+}

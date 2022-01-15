@@ -1,69 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Odd jobs</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Odd jobs</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
 
-<body>
-	
-	<header id="pg-banner">
-		<h1 id="main-heading"><a href="index.html">Odd Jobs</a></h1>
-	</header>
-	
-	<nav id="primary-nav" class="show">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="findingjoe.html">Find Joe</a></li>
-			<li><a href="contact.html">Contact</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-		</ul>
-	</nav>
-	<main id="pg-main-content">
-		
-		<div id="content">
-			<section id="about">
-                <img id="img1" src="img1.png" alt ="img1">
-				<p>We’re just a couple of average Joe’s who created a platform that allows other average Joe’s to promote their skills and connect to their local community. We give you an internet presence without the hassle of navigating complicated tech so that your clients can find you easily & request your services. We help promote your specific skill set to a larger market so that you can get paid more often for doing Odd Jobs for your neighbours!<br></p>
-				<p>With Odd Jobs, you’ll be able to build a profile, list your skills, and post photos of your work so that people in your area can find and book you easily. We manage your payments, offering instalment options for the buyer and reassurance for the worker.</p>
-			</section>
-			<section id="average-joe">
-				<h3>How it works for an Average Joe</h3>
-				<ul>
-                    <img id="img2" src="img2.jpeg" alt ="img2">
-					<li>Build a profile</li>
-					<li>List your skills</li>
-					<li>Upload pictures of your work</li>
-					<li>Set your schedule</li>
-					<li>Sit back and let your odd jobs find you!</li>
-				</ul>
-			</section>
-			<section id="client">
-				<h3>How it works for the Client</h3>
-				<ul>
-                    <img id="img3" src="img3.jpeg" alt ="img3">
-					<li>Search for the skill you need i.e carpentry, child care, etc.</li>
-					<li>Recieve a list of Average Joe's in your area offering those skills.</li>
-					<li>Review their profile, scroll throught their photo gallery and read testimonials from past clients</li>
-					<li>Request a quote</li>
-                    <li>Book online</li>
-					<li>Pay securily through our website</li>
-				</ul>
-			</section>
-		</div>
-	</main>
-	<footer id="pg-footer">
-		<span id="copyright"> All rights reserved. 2021</span>
-		<nav id="footer-nav">
-			<a href="">Terms of Use</a>
-			<a href="contact.html">Contact us</a>
-		</nav>
-	</footer>
+  <body>
+    <header id="pg-banner">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="main-heading" href="#">Odd Jobs</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-right"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="findingjoe.html">Find Joe</a>
+              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="register.html"
+                ><button class="btn btn-info">Register</button></a
+              >
+              <a class="nav-link" href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-	<script src="js/scripts.js"></script>
-</body>
+    <main id="pg-main-content">
+      <div id="content">
+        <section id="about">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  id="img1"
+                  src="img1.png"
+                  alt="img1"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  id="img1"
+                  src="img1.png"
+                  alt="img1"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  id="img1"
+                  src="img1.png"
+                  alt="img1"
+                  class="d-block w-100"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
+          <div class="text-center about-paragraphs">
+            <p>
+              We’re just a couple of average Joe’s who created a platform that
+              allows other average Joe’s to promote their skills and connect to
+              their local community. We give you an internet presence without
+              the hassle of navigating complicated tech so that your clients can
+              find you easily & request your services. We help promote your
+              specific skill set to a larger market so that you can get paid
+              more often for doing Odd Jobs for your neighbours!<br />
+            </p>
+            <p>
+              With Odd Jobs, you’ll be able to build a profile, list your
+              skills, and post photos of your work so that people in your area
+              can find and book you easily. We manage your payments, offering
+              instalment options for the buyer and reassurance for the worker.
+            </p>
+          </div>
+        </section>
+
+        <section id="average-joe" class="section">
+          <div class="container80">
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="section-title">
+                  <h3>How it works for an <span>Average Joe</span></h3>
+                </div>
+
+                <ul>
+                  <li>Build a profile</li>
+                  <li>List your skills</li>
+                  <li>Upload pictures of your work</li>
+                  <li>Set your schedule</li>
+                  <li>Sit back and let your odd jobs find you!</li>
+                </ul>
+                <a href="findjoe.html"
+                  ><button type="button" class="btn btn-info">
+                    Build your profile
+                  </button></a
+                >
+              </div>
+              <div class="col">
+                <img src="img2.jpeg" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="client" class="section">
+          <div class="container80">
+            <div class="row align-items-center">
+              <div class="col">
+                <img src="img3.jpeg" class="img-fluid" />
+              </div>
+              <div class="col">
+                <div class="section-title">
+                  <h3>How it works for the <span>Client</span></h3>
+                </div>
+
+                <ul>
+                  <li>
+                    Search for the skill you need i.e carpentry, child care,
+                    etc.
+                  </li>
+                  <li>
+                    Recieve a list of Average Joe's in your area offering those
+                    skills.
+                  </li>
+                  <li>
+                    Review their profile, scroll throught their photo gallery
+                    and read testimonials from past clients
+                  </li>
+                  <li>Request a quote</li>
+                  <li>Book online</li>
+                  <li>Pay securily through our website</li>
+                </ul>
+                <a href="findjoe.html"
+                  ><button type="button" class="btn btn-info">
+                    Find a Joe
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="pg-footer">
+      <span id="copyright">&copy; All rights reserved. 2021</span>
+      <nav id="footer-nav">
+        <a href="">Terms of Use</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
