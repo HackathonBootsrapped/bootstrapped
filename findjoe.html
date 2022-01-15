@@ -53,26 +53,42 @@
       </nav>
     </header>
     <main>
-      <div>
-        <h3>Search for Average Joe</h3>
-      </div>
-      <div>
-        <select>
-          <option>Dog Walking</option>
-          <option>Painting</option>
-          <option>Cat Walking</option>
-        </select>
-        <select>
-          <option>option1</option>
-          <option>option2</option>
-          <option>option3</option>
-        </select>
-        <form id="search-form" name="search" method="get">
-          <button>SEARCH</button>
-        </form>
-      </div>
-      <div>
-        <img src="#" alt="Image of " />
+      <div class="container80">
+        <br />
+        <h3>Find a Joe</h3>
+        <div class="row">
+          <div class="col" style="padding-top: 20px">
+            <select id="myselection" class="form-select">
+              <option>Which Type of Worker are you looking for?</option>
+              <option value="One">Mover</option>
+              <option value="Two">Dog Walking</option>
+              <option value="Three">Garden Mowing</option>
+            </select>
+            <br />
+            <br />
+            <select id="myselection" class="form-select">
+              <option>Where do you search for a Joe?</option>
+              <option value="One">Halifax</option>
+              <option value="Two">Toronto</option>
+              <option value="Three">Ontario</option>
+            </select>
+            <br />
+            <br />
+
+            <button type="button" class="btn btn-info">Search</button>
+          </div>
+          <div class="col">
+            <div id="imgOne" class="imgDiv">
+              <img src="mover.jpg" alt="" class="img-fluid" />
+            </div>
+            <div id="imgTwo" class="imgDiv">
+              <img src="dog-walking.jpg" alt="" class="img-fluid" />
+            </div>
+            <div id="imgThree" class="imgDiv">
+              <img src="garden-mowing.jpg" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer id="pg-footer">
@@ -89,5 +105,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#myselection").on("change", function () {
+          var demovalue = $(this).val();
+          $("div.imgDiv").hide();
+          $("#img" + demovalue).show();
+        });
+      });
+    </script>
   </body>
 </html>

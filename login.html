@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-<br>
 <body>
 
   <header id="pg-banner">
@@ -56,15 +55,23 @@
     </nav>
   </header>
   <div class="container" id="mydiv">
-    <form action="/action_page.php">
-      <label for="usrname1">Username</label>
-      <input type="text" id="usrname1" name="usrname1" required><br>
-      <input class="centering" type="submit" value="LOGIN" onclick="valids()" id="submitbutton">
-      <label for="psw">Password</label>
-      <input type="password" id="psw" name="psw">
-      <br><br>
+      <form class="contact-form">
+        <div class="section-title">
+          <h3>Login</h3>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
         
-    </form>
   </div>
 
   <script>
@@ -92,22 +99,6 @@
     crossorigin="anonymous"
   ></script>
   <script src="js/scripts.js"></script>
-
-<style>
-.centering {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#footid {
- text-align: center
-
-  }
-
-
-
-</style>
 
 
 </html>

@@ -57,8 +57,6 @@ footer a {
 
 .centering {
   display: block;
-  margin-right: ;
-  margin-left: ;
 }
 
 #footid {
@@ -68,5 +66,26 @@ footer a {
 .myDiv {
   border: 8px outset;
   background-color: LIGHTBLUE;
+  text-align: center;
+}
+
+.contact-form {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h3 span {
+  color: #578abd;
+}
+
+.centering {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footid {
   text-align: center;
 }
